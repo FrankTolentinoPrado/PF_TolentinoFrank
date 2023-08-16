@@ -1,0 +1,496 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(34, 34, 34);
+  /* Header de flexvyne */
+  /*Aqui termina el header*/
+  /* Despliegue del menu hamburguesa de flexvyne */
+  /* Aqui termina el menu hamburguesa*/
+  /* Responsividad del Header */
+  /*Aqui comienza el main de mi pagina*/
+  /* Hero */
+  /*Aqui termina el hero*/
+  /* Aquie comienza el ENJOY */
+  /*Aqui termina el main de mi pagina*/
+  /*Apartado de nosotros*/
+  /*Aqui termina el apartado de nosotros*/
+  /*Apartado de contactanos*/
+  /*Aqui termina el apartado de contactanos*/
+  /*login*/
+  /*termina el login*/
+  /*Aqui comienza el footer de mi pagina*/
+  /*Aqui termina el footer de mi pagina*/
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+body a:hover {
+  color: aquamarine;
+}
+body header {
+  position: relative;
+  padding: 0 2rem;
+  background-color: aliceblue;
+}
+body .flexvyne_navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .flexvyne_navbar .flexvyne_logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+body .flexvyne_navbar .flexvyne_links {
+  display: flex;
+  gap: 3rem;
+}
+body .flexvyne_navbar .flexvyne_toggle_btn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+body .flexvyne_boton_menu {
+  background-color: blueviolet;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+body .flexvyne_boton_menu .flexvyne_boton_menu:hover {
+  scale: 1.05;
+  color: white;
+}
+body .flexvyne_boton_menu .flexvyne_boton_menu:active {
+  scale: 0.95;
+}
+body .flexvyne_dropdown_menu {
+  display: none;
+  right: 2rem;
+  top: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .flexvyne_dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .flexvyne_dropdown_menu .flexvyne_boton_menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  body .flexvyne_navbar .flexvyne_links,
+  body .flexvyne_navbar .flexvyne_boton_menu {
+    display: none;
+  }
+  body .flexvyne_navbar .flexvyne_toggle_btn {
+    display: block;
+  }
+  body .flexvyne_dropdown_menu {
+    display: block;
+  }
+}
+body .containercentro {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .containercentro h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+body .pokemon-centers {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+body .parrafo-centropoke {
+  background-color: rgb(36, 38, 41);
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+body .titulo-centros {
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: aquamarine;
+}
+body .parrafo-centros {
+  color: aliceblue;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+body .containercentro h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgba(48, 47, 47, 0.726);
+}
+body .centros-pokemon {
+  background-color: #112;
+}
+body .parent2 {
+  grid-template-rows: 0.5fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+body .parent2 div {
+  flex: 20%; /* Cambié el tamaño de los divs al 25% del contenedor */
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+body .parent2 div img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+body .productos {
+  padding: 2rem;
+  padding-top: 0;
+  background-color: rgb(107, 42, 193);
+}
+body .titulos-poke {
+  color: white;
+  text-align: center;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body .titulos-poke h2 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 3rem;
+  color: white;
+}
+body .titulos-poke h4 {
+  color: white;
+}
+body .titulos-poke p {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 20px;
+}
+body .cartas-poke {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+body .carta-poke {
+  flex-basis: calc(22% - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body .carta-poke img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+body .carta-poke h4 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: white;
+}
+body .carta-poke p {
+  font-family: "Lato", sans-serif;
+  width: 75%;
+  text-align: center;
+  color: white;
+}
+body .carta-poke a {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1rem;
+  background-color: #af3939;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+body .carta-poke .boton-rojo {
+  border-radius: 5px;
+}
+body .quienes-somos h2 {
+  color: white;
+  text-align: center;
+  background-color: rgb(133, 133, 235);
+}
+body .quienes-somos h3 {
+  color: aquamarine;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+body .quienes-somos p {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+body .merca {
+  color: white;
+}
+body .merca h2 {
+  color: aquamarine;
+  margin-bottom: 10px;
+}
+body .mision h2 {
+  text-align: center;
+  color: aquamarine;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .mision p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+body .vision h2 {
+  text-align: center;
+  color: aquamarine;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+body .vision p {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+body .valores {
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+}
+body .valores h2 {
+  color: aquamarine;
+  margin-bottom: 20px;
+}
+body .valores ul {
+  margin-bottom: 50px;
+}
+body .guia {
+  background-color: rgb(133, 133, 235);
+  text-align: center;
+  max-width: 100%;
+  height: 50px;
+}
+body .guia h2 {
+  color: white;
+}
+body .contactanos {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .container-contactanos {
+  width: 75vw;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+}
+body .contact {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+body .info-contact {
+  background-color: rgb(133, 133, 235);
+  text-align: center;
+}
+body .info-contact h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 2rem;
+}
+body .info-contact h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+body .info-contact li {
+  margin-bottom: 20px;
+}
+body .cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(https://www.xtrafondos.com/descargar.php?id=8485&resolucion=3840x2160);
+}
+body .wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 10px;
+  padding: 100px 60px;
+}
+body .wrapper h2 {
+  font-size: 36px;
+  text-align: center;
+}
+body .wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+body .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+}
+body .input-box input::placeholder {
+  color: white;
+}
+body .input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+body .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+body .wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px 0 15px;
+}
+body .register-link p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+body .register-link p a:hover {
+  text-decoration: underline;
+}
+body footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 10px;
+  color: white;
+  flex-shrink: 0;
+}
+body .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+body .footer-content h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+body .footer-content p {
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 20px;
+  font-size: 14px;
+}
+body .socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 3rem 0;
+}
+body .socials li {
+  margin: 0 15px;
+}
+body .socials a {
+  text-decoration: none;
+  color: white;
+}
+body .socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+body .socials a:hover i {
+  color: aqua;
+}
+body .footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 5px 0;
+  text-align: center;
+}
+body .footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+body .footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        list-style: none;
+        color: #000;
+        font-size: 1.1rem;
+    }
+    
+    a:hover {
+        color: $colorParaSecciones1;
+    }
+}

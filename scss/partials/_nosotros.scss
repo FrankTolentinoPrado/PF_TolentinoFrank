@@ -1,0 +1,89 @@
+/*Apartado de nosotros*/
+
+@mixin quienes-somos-estilos {
+    h2 {
+        color: $colorTitulos;
+        text-align: center;
+        background-color: $colorParaSecciones2;
+    }
+
+    h3 {
+        color: $colorParaSecciones1;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    p {
+        color: $colorMasUsado;
+        text-align: center;
+        margin-top: $medidaMasUsada;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+}
+
+.quienes-somos {
+    @include quienes-somos-estilos;
+}
+
+.merca {
+    color: $colorTitulos;
+
+    h2 {
+        color: $colorParaSecciones1;
+        margin-bottom: $medidaMasUsada;
+    }
+}
+
+
+
+@mixin secciones-comunes {
+    h2,
+    p {
+        text-align: center;
+        color: $colorParaSecciones1;
+    }
+
+    p {
+        color: $colorMasUsado;
+        font-size: 1.2rem;
+    }
+}
+
+.mision {
+    @include secciones-comunes;
+
+    h2 {
+        margin-top: $medidaMasUsada;
+        margin-bottom: $medidaMasUsada;
+    }
+}
+
+.vision {
+    @include secciones-comunes;
+
+    h2 {
+        margin-top: 60px;
+        margin-bottom: $medidaMasUsada;
+    }
+}
+
+
+.valores{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+
+    h2 {
+        color: $colorParaSecciones1;
+        margin-bottom: 20px;
+        
+    }
+    
+    ul {
+        margin-bottom: 50px;
+        
+    }
+}
+
+/*Aqui termina el apartado de nosotros*/

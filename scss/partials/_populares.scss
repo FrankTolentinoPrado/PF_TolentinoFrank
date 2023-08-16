@@ -1,0 +1,82 @@
+/* Aquie comienza la seccion de mas vendidos */
+.productos {
+    padding: $medidaRemMasUsada;
+    padding-top: 0;
+    background-color: rgb(107, 42, 193);
+}
+
+.titulos-poke {
+    color: $colorTitulos;
+    text-align: center;
+    padding-inline: $medidaRemMasUsada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 3rem;
+        color: $colorTitulos;
+    }
+
+    h4 {
+        color: $colorTitulos;
+    }
+    
+    p {
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 20px;
+    }
+}
+
+.cartas-poke {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carta-poke {
+    flex-basis: calc(22% - $medidaRemMasUsada); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        object-fit:fill ;
+    }
+    
+    h4 {
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: $colorTitulos;
+    }
+    
+    p {
+        font-family: 'Lato', sans-serif;
+        width: 75%;
+        text-align: center;
+        color: $colorTitulos;
+    }
+    
+    a {
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 1rem;
+        background-color: #af3939;
+        padding: .75rem 1rem;
+        color: $colorTitulos;
+        text-decoration: none;
+    }
+
+    .boton-rojo {
+        border-radius: 5px;
+    }
+}
+
+/*Aqui termina la seccion de mas vendidos*/

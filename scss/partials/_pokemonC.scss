@@ -1,0 +1,85 @@
+/* Pokemon Centers */
+
+.containercentro {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    h2 {
+        text-align: center;
+        font-size: $medidaRemMasUsada;
+        margin-bottom: $medidaMasUsada;
+    }
+}
+
+.pokemon-centers {
+    margin-top: $medidaMasUsada;
+    border-radius: $medidaMasUsada;
+    background-color: $colorMasUsado;
+}
+
+.parrafo-centropoke {
+    background-color: rgb(36, 38, 41);
+    border-radius: $medidaMasUsada;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo-centros {
+    margin: $medidaMasUsada;
+    text-align: center;
+    font-weight: bold;
+    color: $colorParaSecciones1;
+}
+
+.parrafo-centros {
+    color: $colorMasUsado;
+    margin-top: $medidaMasUsada;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.containercentro h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: $medidaMasUsada;
+    margin-bottom: $medidaMasUsada;
+    color: rgba(48, 47, 47, 0.726);
+
+}
+
+.centros-pokemon {
+    background-color: #112;
+}
+
+.parent2 {
+    grid-template-rows: 0.5fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+     div {
+        flex: 20%; /* Cambié el tamaño de los divs al 25% del contenedor */
+        padding: $medidaMasUsada;
+        box-sizing: border-box;
+        background-color: $colorMasUsado;
+        border-radius: $medidaMasUsada;
+        margin-left: 2px;
+        margin-right: 2px;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    }
+}
+
+/*Aqui termina la seccion de pokemon centers*/
